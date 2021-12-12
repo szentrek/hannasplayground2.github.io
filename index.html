@@ -15,8 +15,7 @@
 	<style>
          h1 {font-size: 33px;}
 		 h2 {font-size: 14px;}
-		 
-      </style>
+	</style>
  
   </head>
   
@@ -47,20 +46,24 @@
 		</table>
 	<hr>	
 		
-		<table id="grape" class="table-borderless table-sm table align-top">
-			<tbody>
-				<tr>
+		<table class="table-sm table align-top">
+			<tbody id="toke">
+				<tr id="grape">
 				  <th scope="row"></th>
 				  <td>Sept. 12, 2019 7:26 a.m.</td>
 				  <td>My baby ripens the black grapes in the fall</td>
 				  <td>Originally written in Hungarian</td>
 				</tr>
-			  </tbody>
+				<tr>
+				  <th scope="row"></th>
+				  <td>Sept. 12, 2019 8:03 a.m.</td>
+				  <td>LOL, Hungarian folk songs are translated in a weird way :)</td>
+				  <td>Originally written in English</td>
+				</tr>
+			 </tbody>
 		</table>			
 				
 	<br>
-	
-	
 	
 	<div class="p-3 mb-1">
 		<label for="exampleFormControlInput1" class="form-label">Say something</label>
@@ -78,4 +81,12 @@
 </main>
   
   </body>
+  
+  	<script>
+	var sor = document.getElementById("grape");
+	var ujsor = sor.cloneNode(true);
+	document.getElementById("toke").appendChild(ujsor);
+	</script>
+	
+	
 </html>
